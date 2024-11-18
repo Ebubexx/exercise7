@@ -6,10 +6,12 @@
     <!-- Ebube Mbanefo 15/11/2024 -->
   </head>
   <style>
+    body {
+      background-color: #fbc4ab;
+    }
     .wrapper {
       width: 1200px;
       margin: 0 auto;
-      background-color: #fbc4ab;
     }
     
     #header {
@@ -18,56 +20,51 @@
       padding: 10px 0;
     }
     
-    .recipe {
-      display: flex;
-      justify-content: space-between;
-      background-color: #fbc4ab;
-      padding: 20px;
-      gap: 10px;
-    }
-    
-    .left-column, .right-column {
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-    }
-    
     .left-column {
       width: 30%;
+      float: left;
     }
     
     .right-column {
-      width: 65%;
+      width: 70%;
+      float: right;
+    }
+    
+    .ingredients-list {
+      position: absolute;
+      top: 20%;
+      left: 2.5%;
+      width: 300px;
     }
     
     .right-column img {
-      /*position: relative;*/
-      width: 100%;
-      margin: 0 auto;
+      width: 75%;
+      margin: 0 50px;
     }
     
     .steps {
-      margin-top: 10px;
-    }
-    
-    ul {
-      padding-left: 20px;
-      margin: 0;
+      width: 75%;
+      margin: 0 50px;
     }
     
   </style>
   <body>
     <div class="wrapper">
-      <div id="header">
-        <h1>Spinach, Tofu and Sesame Stir-Fry</h1>
-      </div>
-    
-    <div class="recipe">
       <div class="left-column">
+        <div id="header">
+          <h1>Spinach, Tofu and Sesame Stir-Fry</h1>
         
         <h3>By: Martha Rose Shulman</h3>
         <p> Yield: 3 Servings</p>
+        </div>
+      </div>
+      
+      <div class="right-column">
+       <img src="recipe-photo-Enhanced-SR.jpg" 
+            alt="image of tofu recipe"> 
+        </div>
 
+      <div class="left-column">
         <div class="ingredients-list">
           <h3>Ingredients</h3>
           <ul>
@@ -84,10 +81,7 @@
        </div>
       </div>
 
-      <div class="right-column">
-        
-        <img src="recipe-photo-Enhanced-SR.jpg" alt="image of tofu recipe">  
-        
+      <div class="right-column">   
         <div class="steps">
         <h3>Preparation</h3>
 
@@ -102,14 +96,11 @@
           <p>
             Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.
           </p>
-        </div>
 
-        <div class="tips">
           <h3>Tip</h3>
           <p>
             Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.
           </p>
-        </div>
       </div>
     </div>
   </div>
